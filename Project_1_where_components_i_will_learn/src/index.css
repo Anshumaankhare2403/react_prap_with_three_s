@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&display=swap');
+
+:root{
+  --bodyColor:rgb(240, 239, 231);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--bodyColor);
+  margin: 3vh;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.Nrow{
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+
+}
+.Ncol{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  
+
+}
+.Loginbutton{
+  background-color: bisque;
+  border-radius: 20px;
+  width: 30%;
+  height: 5vh;
+  display: flex;
+  transition:width 2s ;
+  font-size: 1rem;
+  font-weight: 900;
+  word-spacing: 10px;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.Loginbutton:hover{
+  box-shadow: 1px 1px 1px 1px;
+}
+
+.h1{
+  font-size: 1.8rem;
+  letter-spacing: 10px;
+  font-family: "Yuyu", sans-serif;
+  font-weight: 400;
+}
+.cardrow{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  gap: 10px;
+  width: 100%;
+  /* justify-content: center; */
+}
+.cardcol{
+  /* width: 100%; */
+  justify-self: center;
+  border-radius: 30px;
+  background-color: antiquewhite;
+  padding: 20px;
+  overflow: hidden;
+  
+}
+.Homeclass{
+  padding: 5%;
+}
+.ImageCard{
+  width: 100%;
+  border-radius: 30px;
+  height: 25vh;
+  object-fit: cover;
+  
+  transition: transform 0.3s ease-in-out;
+}
+.ImageCard:hover{
+  transform: scale(1.05);
+}
+.cardp{
+  padding-top: 20px;
+}
+
+.cardh1{
+  border-color: black;
+  border-left: solid 5px;
+  margin-bottom: 40px;
+}
+
+.loginContainer {
+  min-height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.formCard {
+  width: 400px;
+  max-width: 90%;
+  background: antiquewhite;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.formCard h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formCard input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.formCard input:focus {
+  border-color: goldenrod;
+}
+
+.loginbutton {
+  margin-top: 10px;
+  padding: 12px;
+  background: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.loginbutton:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
