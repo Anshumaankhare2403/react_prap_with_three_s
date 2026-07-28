@@ -1,7 +1,9 @@
 import Login from "../buttons/Login"
 import { IoCart } from "react-icons/io5";
+import { FaUserAlt } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
-function NavBar() {
+function NavBar({onLogin}) {
   return (
     <>
     <div className="Nrow">
@@ -12,7 +14,8 @@ function NavBar() {
             <Link className="Ncol">ContactUs</Link>
         </div>
         <div className="Ncol">
-            <Login links = "/login"/>
+          {!onLogin?<Login links = "/login"/>:<FaUserAlt />}
+            
             <IoCart style={{"fontSize":"1.8rem"}} />
         </div>
         

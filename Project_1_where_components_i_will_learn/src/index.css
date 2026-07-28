@@ -155,3 +155,85 @@ body{
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+.about {
+  padding: 80px 10%;
+  background: #f8f9fa;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.about-footer {
+  margin-top: 30px;
+}
+
+.about-footer h2 {
+  margin-bottom: 15px;
+}
+
+.about-footer p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.explore-btn {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.explore-btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
