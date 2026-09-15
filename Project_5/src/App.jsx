@@ -1,8 +1,8 @@
-import Forms from "./components/Forms"
+
 function App() {
   return (
     <>
-     <Forms/> 
+      
     </>
   )
 }
